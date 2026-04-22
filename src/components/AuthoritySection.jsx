@@ -1,9 +1,9 @@
 import WhatsAppIcon from './WhatsAppIcon';
 
 const stats = [
-  { value: '15+', label: 'Anos de Experiência' },
-  { value: '500+', label: 'Projetos Executados' },
-  { value: '100%', label: 'Compromisso com Qualidade' },
+  { value: '40+', label: 'Anos de experiência técnica' },
+  { value: '1.000+', label: 'Projetos entregues' },
+  { value: '100%', label: 'Foco em climatização de alta performance' },
 ];
 
 export default function AuthoritySection({ onCtaClick }) {
@@ -11,7 +11,7 @@ export default function AuthoritySection({ onCtaClick }) {
     <section
       id="autoridade"
       className="relative py-20 sm:py-28 bg-dark-900 overflow-hidden"
-      aria-label="Por que escolher a Casagrande"
+      aria-label="Nosso Legado e Autoridade"
     >
       {/* Background accents */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-whatsapp/3 rounded-full blur-3xl" />
@@ -39,16 +39,16 @@ export default function AuthoritySection({ onCtaClick }) {
           {/* Right: Content */}
           <div className="lg:col-span-3 order-1 lg:order-2">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-whatsapp/10 border border-whatsapp/20 mb-6">
-              <span className="text-whatsapp text-xs font-semibold tracking-wide uppercase">Autoridade</span>
+              <span className="text-whatsapp text-xs font-semibold tracking-wide uppercase">O Legado</span>
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
-              Não Aposte a Qualidade do Seu Empreendimento.{' '}
-              <span className="text-whatsapp">Conte com a Casagrande.</span>
+              4 décadas de Engenharia Térmica:{' '}
+              <span className="text-whatsapp">De Geração em Geração, Dominando o Frio.</span>
             </h2>
 
             <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-8">
-              Escolher os parceiros de climatização define as próximas décadas da estrutura física do seu imóvel ou a reputação do seu negócio. A Casagrande atua sob os mais rigorosos padrões de qualidade, pontualidade nas obras e excelência técnica de sua equipe. Quando o assunto é infraestrutura de aquecimento de alta performance em Caxias do Sul e região, nós somos a escolha segura para garantir tranquilidade e resultados definitivos.
+              A Casagrande não apenas instala equipamentos; nós escrevemos a história do conforto térmico na Serra Gaúcha. São mais de 40 anos de evolução técnica e experiência de mercado, partindo das primeiras caldeiras robustas até os mais sofisticados sistemas de bombas de calor e automação climática de hoje. Nossa trajetória é medida por milhares de ambientes transformados e pela confiança de quem sabe que, para enfrentar o rigor do nosso inverno, a experiência é o único componente que não pode ser improvisado.
             </p>
 
             {/* Differentials */}
@@ -69,10 +69,10 @@ export default function AuthoritySection({ onCtaClick }) {
             <button
               onClick={onCtaClick}
               className="btn-cta inline-flex items-center gap-3 px-8 py-4 rounded-xl text-white font-bold text-sm sm:text-base cursor-pointer"
-              id="authority-cta"
+              id="legacy-cta"
             >
               <WhatsAppIcon className="w-5 h-5" />
-              FALAR COM UM ESPECIALISTA EM CLIMATIZAÇÃO
+              QUERO A EXPERIÊNCIA DA CASAGRANDE NO MEU PROJETO
             </button>
           </div>
         </div>
