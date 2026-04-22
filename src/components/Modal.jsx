@@ -53,8 +53,14 @@ export default function Modal({ isOpen, onClose }) {
       // Silently ignore errors
     });
 
-    // Redirect immediately
-    window.location.href = WHATSAPP_URL;
+    // Fire GTM event for tracking
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'lead-enviado' });
+
+    // Redirect with a small delay to ensure GTM and webhook have time to fire
+    setTimeout(() => {
+      window.location.href = WHATSAPP_URL;
+    }, 300);
   };
 
   if (!isOpen) return null;
